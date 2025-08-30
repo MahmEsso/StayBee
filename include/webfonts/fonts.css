@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Geist';
+    src: url('Geist-Regular.eot');
+    src: url('Geist-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Geist-Regular.woff2') format('woff2'),
+        url('Geist-Regular.woff') format('woff'),
+        url('Geist-Regular.ttf') format('truetype'),
+        url('Geist-Regular.svg#Geist-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sloop ScriptOne';
+    src: url('SloopScriptOne.eot');
+    src: url('SloopScriptOne.eot?#iefix') format('embedded-opentype'),
+        url('SloopScriptOne.woff2') format('woff2'),
+        url('SloopScriptOne.woff') format('woff'),
+        url('SloopScriptOne.ttf') format('truetype'),
+        url('SloopScriptOne.svg#SloopScriptOne') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Editorial New';
+    src: url('PPEditorialNew-Ultralight.eot');
+    src: url('PPEditorialNew-Ultralight.eot?#iefix') format('embedded-opentype'),
+        url('PPEditorialNew-Ultralight.woff2') format('woff2'),
+        url('PPEditorialNew-Ultralight.woff') format('woff'),
+        url('PPEditorialNew-Ultralight.ttf') format('truetype'),
+        url('PPEditorialNew-Ultralight.svg#PPEditorialNew-Ultralight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+

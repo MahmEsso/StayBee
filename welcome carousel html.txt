@@ -1,0 +1,19 @@
+        <!-- <div class="welcome-slider">
+          <div class="welcome-carousel">
+            <div class="welcome-header">
+              <div class="welcome-controls">
+                <button class="welcome-btn" id="prevBtn">◀</button>
+                <button class="welcome-btn" id="nextBtn">▶</button>
+              </div>
+            </div>
+            <div class="welcome-viewport">
+              <div class="welcome-stage" id="stage">
+                <figure class="welcome-card"><img src="images/welcome-slide1.jpg" alt=""/></figure>
+                <figure class="welcome-card"><img src="images/welcome-slide2.jpg" alt=""/></figure>
+                <figure class="welcome-card"><img src="images/welcome-slide3.jpg" alt=""/></figure>
+                <figure class="welcome-card"><img src="images/welcome-slide4.jpg" alt=""/></figure>
+              </div>
+            </div>
+            <div class="welcome-dots" id="dots"></div>
+          </div>
+        </div> -->

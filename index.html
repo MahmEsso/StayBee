@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>StayBee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" href="include/css/bootstrap/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="include/call-styles.css" type="text/css">
+  <link rel="stylesheet" href="include/css/all.min.css">
+  <link rel="stylesheet" href="include/css/fontawesome.min.css">
+  <link rel="stylesheet" href="include/webfonts/fonts.css">
+
+  
+  <link rel="stylesheet" href="include/css/animate.css">
+  
+  <link rel="stylesheet" href="include/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="include/css/owl.theme.default.min.css">
+
+  <script src="include/js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+</head>
+<body>
+
+<div class="hero bg-styles wow fadeIn" style="background-image:url(images/hero-bg.jpg);">
+  <div id="main_navbar" class="nav-con">
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0"><!-- me-auto -->
+            <li class="nav-item"><a class="nav-link" href="#">Our Hives</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Behind StayBee</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Business Stays</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Rent Your Unit</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Guides</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="">
+    <div class="container"><hr></div>
+  </div>
+  <div class="slider-con">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleIndicators" class="carousel slide carousel-fade"  data-bs-ride="carousel"><!--  data-bs-ride="carousel"  => to make it autoplay-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="bg-styles active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-styles" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item bg-styles active" style="background-image:url(images/slide1.jpg);"></div>
+              <div class="carousel-item bg-styles" style="background-image:url(images/slide2.jpg);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="availability-form-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="availability-form-section">
+          <form action="" class="availability-form">
+            <div class="div1">
+              <label for="location" class="form-label">Locations</label>
+              <div class="custom-selects">
+                <select class="form-select" id="location" aria-label="location">
+                  <option selected>Zamalek</option>
+                  <option value="2">Downtown</option>
+                  <option value="3">Nasr City</option>
+                  <option value="4">6 Of October</option>
+                </select>
+              </div>
+            </div>
+            <div class="div2">
+              <label for="checkin" class="form-label">Check In/Out</label>
+              <input class="form-select" type="text" name="daterange" value="" />
+            </div>
+            <div class="div3">
+              <label for="guests" class="form-label">Guests</label>
+              <div class="custom-selects">
+                <select class="form-select" id="guests" aria-label="Guests">
+                  <option selected>1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7">7 Guests</option>
+                  <option value="8">8 Guests</option>
+                  <option value="9">9 Guests</option>
+                  <option value="10">10 Guests</option>
+                </select>
+              </div>
+            </div>
+            <div class="div4">
+              <label for="rooms" class="form-label">Rooms</label>
+              <div class="custom-selects">
+                <select class="form-select" id="rooms" aria-label="Rooms">
+                  <option selected>1 Room</option>
+                  <option value="2">2 Rooms</option>
+                  <option value="3">3 Rooms</option>
+                  <option value="4">4 Rooms</option>
+                  <option value="5">5 Rooms</option>
+                  <option value="6">6 Rooms</option>
+                  <option value="7">7 Rooms</option>
+                  <option value="8">8 Rooms</option>
+                  <option value="9">9 Rooms</option>
+                  <option value="10">10 Rooms</option>
+                </select>
+              </div>
+            </div>
+            <div class="div5">
+              <button type="submit" class="my-btn w-100">Check Availability</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section welcome-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-lg-4">
+        <div class="welcome-text">
+          <div class="heading"><span>The</span> Best of Cairo Wherever You Land</div>
+          <p>Check our Hives, which are designed perfectly for you. </p>
+          <a class="my-btn mt-3" href="#availability-form-section">Check Availability</a>
+        </div>
+      </div>
+      <div class="col-xl-8 col-lg-7 offset-xl-1 offset-lg-1">
+        <img src="images/welcome-img.png" class="w-100" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="why-staybee">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="heading text-center">They’re Designed To Speak <span>Who</span> You Are</div>
+        <p class="text-center">We curate designs to turn stays into homes, with a touch of elevation</p>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-xl-10">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 offset-md-1 offset-lg-0 offset-xl-0">
+            <div class="why-box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 237" fill="none">
+                <path d="M205.624 59.5381V177.461L103.5 236.423L1.37598 177.461V59.5381L103.5 0.576172L205.624 59.5381Z" stroke="#768A6C"/>
+              </svg>
+              <div class="why-txt">
+                <p>Earthy, inspired aesthetics</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="why-box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 237" fill="none">
+                <path d="M205.624 59.5381V177.461L103.5 236.423L1.37598 177.461V59.5381L103.5 0.576172L205.624 59.5381Z" stroke="#768A6C"/>
+              </svg>
+              <div class="why-txt">
+                <p>Smart-home approach</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 offset-md-3 offset-lg-0 offset-xl-0">
+            <div class="why-box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 237" fill="none">
+                <path d="M205.624 59.5381V177.461L103.5 236.423L1.37598 177.461V59.5381L103.5 0.576172L205.624 59.5381Z" stroke="#768A6C"/>
+              </svg>
+              <div class="why-txt">
+                <p>Luxe furniture and fine finishes</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="why-box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 237" fill="none">
+                <path d="M205.624 59.5381V177.461L103.5 236.423L1.37598 177.461V59.5381L103.5 0.576172L205.624 59.5381Z" stroke="#768A6C"/>
+              </svg>
+              <div class="why-txt">
+                <p>Layouts built around real guest lives</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container"><hr></div>
+<div class="section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="heading text-center">A <span>Stay</span> Beyond Expectations</div>
+        <p class="text-center">Short trip? Long stay? Doesn’t matter.<br>Our seamless stays are designed to fit all your possible needs.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 px-sm-0">
+        <div class="stays-carousel owl-carousel owl-theme wow fadeInUp">
+          <div class="carousel-stay-box">
+            <div class="carousel-stay-img text-center"><a href="#"><img src="images/stay3.jpg" alt=""></a></div>
+            <div class="carousel-stay-title">
+              <h2>Hilton Maadi Nile View</h2>
+              <a href="#" class="my-btn">Check Availability</a>
+            </div>
+            <div class="stay-desc">
+              <p>Welcome to Celestial Haven, your luxurious escape nestled on the nile of Egypt in Maadi. This elegantly designed apartment offers a</p>
+            </div>
+          </div>
+          <div class="carousel-stay-box">
+            <div class="carousel-stay-img text-center"><a href="#"><img src="images/stay1.jpg" alt=""></a></div>
+            <div class="carousel-stay-title">
+              <h2>Hilton Maadi Nile View</h2>
+              <a href="#" class="my-btn">Check Availability</a>
+            </div>
+            <div class="stay-desc">
+              <p>Welcome to Celestial Haven, your luxurious escape nestled on the nile of Egypt in Maadi. This elegantly designed apartment offers a</p>
+            </div>
+          </div>
+          <div class="carousel-stay-box">
+            <div class="carousel-stay-img text-center"><a href="#"><img src="images/stay2.jpg" alt=""></a></div>
+            <div class="carousel-stay-title">
+              <h2>Hilton Maadi Nile View</h2>
+              <a href="#" class="my-btn">Check Availability</a>
+            </div>
+            <div class="stay-desc">
+              <p>Welcome to Celestial Haven, your luxurious escape nestled on the nile of Egypt in Maadi. This elegantly designed apartment offers a</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container"><hr></div>
+<div class="section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="heading text-center">Ongoing Services Edge <span>That</span> Never Sleeps</div>
+      </div>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-lg-10">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6 mt-4">
+              <div class="service-box text-center">
+                <p>24/7 Guest<br>Support</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-4">
+              <div class="service-box text-center">
+                <p>Tech Tools:<br>Website + PMSt</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-4">
+              <div class="service-box text-center">
+                <p>Housekeeping with<br>hotel-level polish</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-4">
+              <div class="service-box text-center">
+                <p>HVAC & CCTV<br>Security</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-4">
+              <div class="service-box text-center">
+                <p>Fast, skilled<br>maintenance teams</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container"><hr></div>
+<div class="section advantage-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-xl-6 col-lg-8 col-md-10">
+        <div class="heading text-center">Corporate Housing <span>That</span> Works <span>Just</span> As Hard As You</div>
+      </div>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-lg-5">
+          <div class="advantage-box">
+            <div class="advantage-icon">
+              <div class="hexagon-container ratio ratio-1x1">
+                <div class="hexagon-clip"></div>
+              </div>
+            </div>
+            <div class="advantage-txt">Furnished homes for<br>every kind of traveler.</div>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="advantage-box">
+            <div class="advantage-icon">
+              <div class="hexagon-container ratio ratio-1x1">
+                <div class="hexagon-clip"></div>
+              </div>
+            </div>
+            <div class="advantage-txt">Housing that helps you<br>retain your best people.</div>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="advantage-box">
+            <div class="advantage-icon">
+              <div class="hexagon-container ratio ratio-1x1">
+                <div class="hexagon-clip"></div>
+              </div>
+            </div>
+            <div class="advantage-txt">Dedicated employee<br>support. </div>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="advantage-box">
+            <div class="advantage-icon">
+              <div class="hexagon-container ratio ratio-1x1">
+                <div class="hexagon-clip"></div>
+              </div>
+            </div>
+            <div class="advantage-txt">Expertise in international<br>housing contracts.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="faq-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="heading text-center">Frequently Asked <span>Q</span>uestions</div>
+          <p class="text-center mw-600">We hope we've covered all your questions. If there's anything else on your mind,just give us a shout. We're here for you!</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="faqs-con">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                    Q1- Can I stay with my fiancé/Boyfriend/girlfriend?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>1. Following the Egyptian Law, if any of the couple holds an Arab passport, a marriage certificate will be required to stay together.<br>
+                    2. Following the Egyptian law, if any of a couple is Egyptian or Arab, they must submit an official marriage proof – “Orfi” or any unofficial documents are not allowed.<br>
+                    3. Non-Arab passport holders are welcomed without the need of marriage certificate.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Q2- Are visits allowed?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>1. Following the Egyptian Law, if any of the couple holds an Arab passport, a marriage certificate will be required to stay together.<br>
+                    2. Following the Egyptian law, if any of a couple is Egyptian or Arab, they must submit an official marriage proof – “Orfi” or any unofficial documents are not allowed.<br>
+                    3. Non-Arab passport holders are welcomed without the need of marriage certificate.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Q3- Do you allow pets?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>1. Following the Egyptian Law, if any of the couple holds an Arab passport, a marriage certificate will be required to stay together.<br>
+                    2. Following the Egyptian law, if any of a couple is Egyptian or Arab, they must submit an official marriage proof – “Orfi” or any unofficial documents are not allowed.<br>
+                    3. Non-Arab passport holders are welcomed without the need of marriage certificate.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Q4- Is there any kinds of discounts?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>1. Following the Egyptian Law, if any of the couple holds an Arab passport, a marriage certificate will be required to stay together.<br>
+                    2. Following the Egyptian law, if any of a couple is Egyptian or Arab, they must submit an official marriage proof – “Orfi” or any unofficial documents are not allowed.<br>
+                    3. Non-Arab passport holders are welcomed without the need of marriage certificate.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-12">
+        <div class="footer-box">
+          <div class="footer-logo mb-2"><img src="images/footer-logo.png" alt=""></div>
+          <div class="footer-about">
+            <p>Staybee blends smart tech, personal touches, and standout service to redefine modern luxury,tailored experiences in stunning spaces that feel like they were made just for you.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-box">
+          <div class="footer-head"><h3>QUICK LINKS</h3></div>
+          <ul class="footer-menu">
+            <li><a href="#">Home Hive</a></li>
+            <li><a href="#">Our Stays</a></li>
+            <li><a href="#">Become a Partner</a></li>
+            <li><a href="#why-staybee">Why Staybee?</a></li>
+            <li><a href="#">Join our team</a></li>
+            <li><a href="#">Contact Us </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-box">
+          <div class="footer-head"><h3>NEWSLETTER</h3></div>
+          <div class="footer-newsletter">
+            <p>Don’t Miss a Beat from the Hive!<br>Get updates on our news, units, exclusive deals and partnership opportunities.</p>
+            <a href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-credits">
+          <div class="footer-icon"><img src="images/footer-icon.png" alt=""></div>
+          <p>© 2024 StayBee. All Rights Reserved.</p>
+          <p>Built with care, booked with ease, and buzzing across cities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<!-- <svg>
+  <path d="M45 0 L 90 30 L 90 60 L 45 90 L 0 60 L 0 30 Z" fill="none" stroke="black" stroke-width="7px" />
+</svg>
+
+<svg width="90" height="90" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+	<path class="st0" fill="#E6E998" d="M4.3,0.6l3.8,2.2v4.4L4.3,9.4L0.5,7.2V2.8L4.3,0.6 M4.3,0L0,2.5v5L4.3,10l4.3-2.5v-5L4.3,0L4.3,0z"/>
+</svg>
+<div class="hexagon-container ratio ratio-1x1">
+  <div class="hexagon-clip"></div>
+</div>
+<svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 485.688 485.688" xml:space="preserve" transform="rotate(270)">
+  <g id="SVGRepo_iconCarrier">
+    <path d="M364.269,453.155H121.416L0,242.844L121.416,32.533h242.853l121.419,210.312L364.269,453.155z M131.905,434.997h221.878 l110.939-192.152L353.783,50.691H131.905L20.966,242.844L131.905,434.997z"></path>
+  </g>
+</svg> -->
+<button class="toTop" style="display:block;"><i class="fa-solid fa-arrow-up"></i></button>
+
+  
+
+  <script src="include/js/jquery-3.6.0.min.js"></script>
+  <script src="include/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="include/js/owl.carousel.js"></script>
+  <script src="include/js/custom-select.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+  <script src="include/js/main.js"></script>
+
+</body>
+</html>
