@@ -88,20 +88,37 @@
               <input class="form-select" type="text" name="daterange" value="" />
             </div>
             <div class="div3">
-              <label for="guests" class="form-label">Guests</label>
-              <div class="custom-selects">
-                <select class="form-select" id="guests" aria-label="Guests">
-                  <option selected>1 Guest</option>
-                  <option value="2">2 Guests</option>
-                  <option value="3">3 Guests</option>
-                  <option value="4">4 Guests</option>
-                  <option value="5">5 Guests</option>
-                  <option value="6">6 Guests</option>
-                  <option value="7">7 Guests</option>
-                  <option value="8">8 Guests</option>
-                  <option value="9">9 Guests</option>
-                  <option value="10">10 Guests</option>
-                </select>
+              <div class="gx-guests" data-gx-max="20">
+                <label class="form-label" id="gx-label-1">Guests</label>
+                <!-- Toggle / display -->
+                <button type="button" class="gx-toggle" aria-expanded="false" aria-controls="gx-panel-1" aria-labelledby="gx-label-1 gx-total-1">
+                  <span id="gx-total-1" class="gx-total" aria-live="polite">1</span>
+                </button>
+                <!-- Dropdown panel -->
+                <div class="gx-panel" id="gx-panel-1" role="dialog" aria-modal="false" hidden>
+                  <div class="gx-row">
+                    <div class="gx-row-label">Adults</div>
+                    <div class="gx-ctrls">
+                      <button type="button" class="gx-btn gx-dec" aria-label="Decrease adults">−</button>
+                      <input type="number" class="gx-num" inputmode="numeric" aria-label="Number of adults" value="1" min="1" max="20">
+                      <button type="button" class="gx-btn gx-inc" aria-label="Increase adults">+</button>
+                    </div>
+                  </div>
+                  <div class="gx-row">
+                    <div class="gx-row-label">Children</div>
+                    <div class="gx-ctrls">
+                      <button type="button" class="gx-btn gx-dec" aria-label="Decrease children">−</button>
+                      <input type="number" class="gx-num" inputmode="numeric"
+                            aria-label="Number of children" value="0" min="0" max="20">
+                      <button type="button" class="gx-btn gx-inc" aria-label="Increase children">+</button>
+                    </div>
+                  </div>
+                  <button type="button" class="gx-apply">Apply</button>
+                </div>
+                <!-- Hidden fields for form submission -->
+                <input type="hidden" name="adults" value="1">
+                <input type="hidden" name="children" value="0">
+                <input type="hidden" name="guests" value="1">
               </div>
             </div>
             <div class="div4">
@@ -503,6 +520,8 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
   <script src="include/js/main.js"></script>
+
+
 
 </body>
 </html>

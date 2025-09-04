@@ -77,6 +77,118 @@ $(function() {
 });
 
 
+(function () {
+  // Helper: clamp number
+  const clamp = (n, min, max) => Math.min(Math.max(n, min), max);
+
+  document.querySelectorAll('.gx-guests').forEach((root, idx) => {
+    const toggle = root.querySelector('.gx-toggle');
+    const panel  = root.querySelector('.gx-panel');
+    const inputs = root.querySelectorAll('.gx-num');
+    const totalEl= root.querySelector('.gx-total');
+    const hiddenAdults   = root.querySelector('input[name="adults"]');
+    const hiddenChildren = root.querySelector('input[name="children"]');
+    const hiddenGuests   = root.querySelector('input[name="guests"]');
+
+    // Respect optional global max via data-gx-max
+    const overallMax = parseInt(root.getAttribute('data-gx-max') || '99', 10);
+
+    // Open/close
+    function openPanel() {
+      panel.hidden = false;
+      toggle.setAttribute('aria-expanded','true');
+      // focus first control for accessibility
+      const firstBtn = panel.querySelector('.gx-btn');
+      if (firstBtn) firstBtn.focus({preventScroll:true});
+      document.addEventListener('click', onDocClick);
+      document.addEventListener('keydown', onEsc);
+    }
+    function closePanel() {
+      panel.hidden = true;
+      toggle.setAttribute('aria-expanded','false');
+      document.removeEventListener('click', onDocClick);
+      document.removeEventListener('keydown', onEsc);
+      toggle.focus({preventScroll:true});
+    }
+    function onDocClick(e){
+      if (!root.contains(e.target)) closePanel();
+    }
+    function onEsc(e){
+      if (e.key === 'Escape') closePanel();
+    }
+
+    toggle.addEventListener('click', () => {
+      panel.hidden ? openPanel() : closePanel();
+    });
+
+    // Increment / decrement
+    panel.addEventListener('click', (e) => {
+      const btn = e.target.closest('.gx-btn');
+      if (!btn) return;
+
+      const wrapper = btn.closest('.gx-ctrls');
+      const input = wrapper.querySelector('.gx-num');
+      const min = parseInt(input.min || '0', 10);
+      const max = parseInt(input.max || '99', 10);
+
+      let adults    = parseInt(panel.querySelectorAll('.gx-num')[0].value, 10);
+      let children  = parseInt(panel.querySelectorAll('.gx-num')[1].value, 10);
+      const isInc   = btn.classList.contains('gx-inc');
+
+      // Global cap so total can't exceed overallMax
+      const currentTotal = adults + children;
+
+      if (isInc) {
+        if (currentTotal >= overallMax) return;
+        input.value = clamp(parseInt(input.value,10) + 1, min, max);
+      } else {
+        input.value = clamp(parseInt(input.value,10) - 1, min, max);
+      }
+
+      syncTotals();
+    });
+
+    // Manual typing
+    inputs.forEach(inp => {
+      inp.addEventListener('input', () => {
+        // Ensure valid integers within bounds
+        const min = parseInt(inp.min || '0', 10);
+        const max = parseInt(inp.max || '99', 10);
+        const val = parseInt(inp.value || '0', 10);
+        inp.value = clamp(isNaN(val) ? min : val, min, max);
+        // Enforce overall total cap
+        let a = parseInt(inputs[0].value,10), c = parseInt(inputs[1].value,10);
+        if (a + c > overallMax) {
+          // reduce this input to fit
+          const over = a + c - overallMax;
+          inp.value = clamp(parseInt(inp.value,10) - over, min, max);
+        }
+        syncTotals();
+      });
+    });
+
+    function syncTotals(){
+      const adults   = parseInt(inputs[0].value,10);
+      const children = parseInt(inputs[1].value,10);
+      const total    = adults + children;
+
+      totalEl.textContent = total;
+
+      // update hiddens for forms
+      hiddenAdults.value   = String(adults);
+      hiddenChildren.value = String(children);
+      hiddenGuests.value   = String(total);
+    }
+
+    // Apply button simply closes panel (values already synced)
+    panel.querySelector('.gx-apply').addEventListener('click', closePanel);
+
+    // Initial sync
+    syncTotals();
+  });
+})();
+
+
 /*
 	(function(){
 	const carousel = document.querySelector('.carousel');
