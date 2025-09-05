@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>StayBee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" href="include/css/bootstrap/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="include/call-styles.css" type="text/css">
+  <link rel="stylesheet" href="include/css/all.min.css">
+  <link rel="stylesheet" href="include/css/fontawesome.min.css">
+  <link rel="stylesheet" href="include/webfonts/fonts.css">
+
+  
+  <link rel="stylesheet" href="include/css/animate.css">
+  
+  <link rel="stylesheet" href="include/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="include/css/owl.theme.default.min.css">
+
+  <script src="include/js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+</head>
+<body class="inner-body">
+
+<div class="hero bg-styles wow fadeIn" style="background-image:url(images/hero-bg.jpg);">
+  <div id="main_navbar" class="nav-con">
+    <nav class="navbar navbar-expand-xl">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0"><!-- me-auto -->
+            <li class="nav-item"><a class="nav-link" href="#">Our Hives</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Behind StayBee</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Business Stays</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Rent Your Unit</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Guides</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="">
+    <div class="container"><hr></div>
+  </div>
+  <div class="slider-con">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-12">
+          <div class="inner-header bg-styles" style="background-image:url(images/results-header-bg.jpg);">
+            <div class="heading text-center"><span>Buzz</span> Into Your Perfect Stay</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="availability-form-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="availability-form-section">
+          <form action="" class="availability-form">
+            <div class="div1">
+              <label for="location" class="form-label">Locations</label>
+              <div class="custom-selects">
+                <select class="form-select" id="location" aria-label="location">
+                  <option selected>Zamalek</option>
+                  <option value="2">Downtown</option>
+                  <option value="3">Nasr City</option>
+                  <option value="4">6 Of October</option>
+                </select>
+              </div>
+            </div>
+            <div class="div2">
+              <label for="checkin" class="form-label">Check In/Out</label>
+              <input class="form-select" type="text" name="daterange" value="" />
+            </div>
+            <div class="div3">
+              <div class="gx-guests" data-gx-max="20">
+                <label class="form-label" id="gx-label-1">Guests</label>
+                <!-- Toggle / display -->
+                <button type="button" class="gx-toggle" aria-expanded="false" aria-controls="gx-panel-1" aria-labelledby="gx-label-1 gx-total-1">
+                  <span id="gx-total-1" class="gx-total" aria-live="polite">1</span>
+                </button>
+                <!-- Dropdown panel -->
+                <div class="gx-panel" id="gx-panel-1" role="dialog" aria-modal="false" hidden>
+                  <div class="gx-row">
+                    <div class="gx-row-label">Adults</div>
+                    <div class="gx-ctrls">
+                      <button type="button" class="gx-btn gx-dec" aria-label="Decrease adults">−</button>
+                      <input type="number" class="gx-num" inputmode="numeric" aria-label="Number of adults" value="1" min="1" max="20">
+                      <button type="button" class="gx-btn gx-inc" aria-label="Increase adults">+</button>
+                    </div>
+                  </div>
+                  <div class="gx-row">
+                    <div class="gx-row-label">Children</div>
+                    <div class="gx-ctrls">
+                      <button type="button" class="gx-btn gx-dec" aria-label="Decrease children">−</button>
+                      <input type="number" class="gx-num" inputmode="numeric"
+                            aria-label="Number of children" value="0" min="0" max="20">
+                      <button type="button" class="gx-btn gx-inc" aria-label="Increase children">+</button>
+                    </div>
+                  </div>
+                  <button type="button" class="gx-apply">Apply</button>
+                </div>
+                <!-- Hidden fields for form submission -->
+                <input type="hidden" name="adults" value="1">
+                <input type="hidden" name="children" value="0">
+                <input type="hidden" name="guests" value="1">
+              </div>
+            </div>
+            <div class="div4">
+              <label for="rooms" class="form-label">Rooms</label>
+              <div class="custom-selects">
+                <select class="form-select" id="rooms" aria-label="Rooms">
+                  <option selected>1 Room</option>
+                  <option value="2">2 Rooms</option>
+                  <option value="3">3 Rooms</option>
+                  <option value="4">4 Rooms</option>
+                  <option value="5">5 Rooms</option>
+                  <option value="6">6 Rooms</option>
+                  <option value="7">7 Rooms</option>
+                  <option value="8">8 Rooms</option>
+                  <option value="9">9 Rooms</option>
+                  <option value="10">10 Rooms</option>
+                </select>
+              </div>
+            </div>
+            <div class="div5">
+              <button type="submit" class="my-btn w-100">Check Availability</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="stay-result-box">
+          <div class="stay-result-carousel">
+            <div class="result-carousel-side">
+              <div class="stay-rate" data-rate="3">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+              <div id="stay-result-carousel" class="carousel slide carousel-fade"  data-bs-ride="carousel"><!--  data-bs-ride="carousel"  => to make it autoplay-->
+                <div class="carousel-inner">
+                  <div class="carousel-item bg-styles active" style="background-image:url(images/stay-result-1.jpg);"></div>
+                  <div class="carousel-item bg-styles" style="background-image:url(images/stay-result-2.jpg);"></div>
+                </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#stay-result-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#stay-result-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+            </div>
+            <div class="stay-result-text">
+              <div class="result-desc">
+                <h1>CFC 3 5K12</h1>
+                <small>2.8 (1,235 reviews) | CFC compound | 0.4 mi from destination</small>
+                <p>Welcome to CFC 3 5K12, your charming apartment in 5th Settlement, New Cairo. Designed for relaxation and comfort, this inviting space offers modern amenities and a cozy atmosphere. Enjoy the perfect getaway while being close to all the vibrant attractions the city has to offer.</p>
+                <a href="#">View More...</a>
+              </div>
+              <div class="stay-price-action">
+                <div class="stay-price">2300$ / Month</div>
+                <div class="stay-action"><a href="#" class="my-btn">Reserve Now</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stay-result-box">
+          <div class="stay-result-carousel">
+            <div class="result-carousel-side">
+              <div class="stay-rate" data-rate="3">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+              <div id="stay-result-carousel" class="carousel slide carousel-fade"  data-bs-ride="carousel"><!--  data-bs-ride="carousel"  => to make it autoplay-->
+                <div class="carousel-inner">
+                  <div class="carousel-item bg-styles active" style="background-image:url(images/stay-result-2.jpg);"></div>
+                  <div class="carousel-item bg-styles" style="background-image:url(images/stay-result-1.jpg);"></div>
+                </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#stay-result-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#stay-result-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+            </div>
+            <div class="stay-result-text">
+              <div class="result-desc">
+                <h1>CFC 3 5K12</h1>
+                <small>2.8 (1,235 reviews) | CFC compound | 0.4 mi from destination</small>
+                <p>Welcome to CFC 3 5K12, your charming apartment in 5th Settlement, New Cairo. Designed for relaxation and comfort, this inviting space offers modern amenities and a cozy atmosphere. Enjoy the perfect getaway while being close to all the vibrant attractions the city has to offer.</p>
+                <a href="#">View More...</a>
+              </div>
+              <div class="stay-price-action">
+                <div class="stay-price">2300$ / Month</div>
+                <div class="stay-action"><a href="#" class="my-btn">Reserve Now</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stay-result-box">
+          <div class="stay-result-carousel">
+            <div class="result-carousel-side">
+              <div class="stay-rate" data-rate="3">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+              <div id="stay-result-carousel" class="carousel slide carousel-fade"  data-bs-ride="carousel"><!--  data-bs-ride="carousel"  => to make it autoplay-->
+                <div class="carousel-inner">
+                  <div class="carousel-item bg-styles active" style="background-image:url(images/stay-result-1.jpg);"></div>
+                  <div class="carousel-item bg-styles" style="background-image:url(images/stay-result-2.jpg);"></div>
+                </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#stay-result-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#stay-result-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+            </div>
+            <div class="stay-result-text">
+              <div class="result-desc">
+                <h1>CFC 3 5K12</h1>
+                <small>2.8 (1,235 reviews) | CFC compound | 0.4 mi from destination</small>
+                <p>Welcome to CFC 3 5K12, your charming apartment in 5th Settlement, New Cairo. Designed for relaxation and comfort, this inviting space offers modern amenities and a cozy atmosphere. Enjoy the perfect getaway while being close to all the vibrant attractions the city has to offer.</p>
+                <a href="#">View More...</a>
+              </div>
+              <div class="stay-price-action">
+                <div class="stay-price">2300$ / Month</div>
+                <div class="stay-action"><a href="#" class="my-btn">Reserve Now</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-12">
+        <div class="footer-box">
+          <div class="footer-logo mb-2"><img src="images/footer-logo.png" alt=""></div>
+          <div class="footer-about">
+            <p>Staybee blends smart tech, personal touches, and standout service to redefine modern luxury,tailored experiences in stunning spaces that feel like they were made just for you.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-box">
+          <div class="footer-head"><h3>QUICK LINKS</h3></div>
+          <ul class="footer-menu">
+            <li><a href="#">Home Hive</a></li>
+            <li><a href="#">Our Stays</a></li>
+            <li><a href="#">Become a Partner</a></li>
+            <li><a href="#why-staybee">Why Staybee?</a></li>
+            <li><a href="#">Join our team</a></li>
+            <li><a href="#">Contact Us </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-box">
+          <div class="footer-head"><h3>NEWSLETTER</h3></div>
+          <div class="footer-newsletter">
+            <p>Don’t Miss a Beat from the Hive!<br>Get updates on our news, units, exclusive deals and partnership opportunities.</p>
+            <a href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-credits">
+          <div class="footer-icon"><img src="images/footer-icon.png" alt=""></div>
+          <p>© 2024 StayBee. All Rights Reserved.</p>
+          <p>Built with care, booked with ease, and buzzing across cities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="toTop" style="display:block;"><i class="fa-solid fa-arrow-up"></i></button>
+
+  
+
+  <script src="include/js/jquery-3.6.0.min.js"></script>
+  <script src="include/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="include/js/owl.carousel.js"></script>
+  <script src="include/js/custom-select.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+  <script src="include/js/main.js"></script>
+
+
+
+</body>
+</html>
