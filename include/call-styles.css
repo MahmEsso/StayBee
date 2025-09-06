@@ -245,7 +245,7 @@ footer h3,footer a{color:var(--bg-color);}
 .stay-rate[data-rate="4"] .star:nth-child(-n+4){background-image:url(../images/indicator-solid.svg);}
 .stay-rate[data-rate="5"] .star:nth-child(-n+5){background-image:url(../images/indicator-solid.svg);}
 
-.inner-about{background-size:cover;background-position:top center;}
+.inner-about{background-size:100% auto;background-position:top center;background-repeat:no-repeat;}
 .about-intro p{text-align:center;}
 .about-intro .heading{text-transform:capitalize;}
 .about-intro-icon{margin:240px 0;}
@@ -258,7 +258,19 @@ footer h3,footer a{color:var(--bg-color);}
 .hospitality-section{padding:120px;}
 .hospitality-head{color:#004B3D;font-size:30px;text-align:center;margin-bottom:10px;}
 
+.picking-box{grid-template-columns: 240px 1fr;gap: 30px;align-items: center;}
+.picking-box .why-box{width: 240px;}
+.picking-box .why-box p{font-family:var(--heading-font);color:#004B3D;font-size:42px;}
+.picking-txt ul{list-style:url(../images/Polygon-light.png);list-style-position: inside;font-size:24px;line-height:1.4;}
+.picking-txt ul li{margin-bottom:6px;}
 
+.partners-wrapper ul{display:flex;flex-wrap:wrap;gap:60px;justify-content:space-evenly;}
+.partners-wrapper ul img{max-height:78px;max-width:100%;}
+.partners-wrapper ul img:hover{filter:none;opacity:1;}
+
+
+
+.about-intro{margin-bottom:120px;}
 
 
 
@@ -267,6 +279,9 @@ footer h3,footer a{color:var(--bg-color);}
 
 
 @media (min-width: 576px) {
+.about-intro{margin-bottom:180px;}
+.picking-box{display:grid;}
+.picking-box .why-box{margin-right: 0;}
 
 }
 
@@ -291,6 +306,7 @@ footer h3,footer a{color:var(--bg-color);}
 .advantage-txt{font-size:28px;}
 .accordion-button{font-size: 24px;}
 
+.about-intro{margin-bottom:220px;}
 
 }
 
