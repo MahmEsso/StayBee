@@ -327,11 +327,14 @@ footer h3,footer a{color:var(--bg-color);}
 .stay-result-text{width:60%;}
 .about-intro .heading{font-size:78px;}
 
+.about-intro{margin-bottom:400px;}
 }
 
 @media (min-width: 1200px) {
+.about-intro{margin-bottom:600px;}
 	
 }
 @media (min-width: 1400px) {
 	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {max-width: 1460px;}
+	.about-intro{margin-bottom:700px;}
 }
